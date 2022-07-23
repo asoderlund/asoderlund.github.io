@@ -6,8 +6,8 @@ subtitle: Background
 
 Hi! I'm Alyssa Soderlund. I am currently studying for my masters of engineering in data analytics at George Mason University. I am a former teacher transitioning into the world of data science!
 
-I received my bachelors
+I received my bachelors in mathematics and minor in computer science from Christopher Newport University in December 2018. My passion for data science began when I found that I could apply both mathematics and programming to data science problems.
 
-### My story
+I have always been the kind of person who loves to solve puzzles, and I see every dataset as a puzzle just waiting to be solved. It is fascinating to see what secrets can be unearthed from the analytics process.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+If you would like to know more about my background, check out my LinkedIn profile and my portfolio projects!
