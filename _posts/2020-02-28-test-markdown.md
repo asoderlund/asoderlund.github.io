@@ -8,8 +8,6 @@ tags: [python]
 comments: false
 ---
 
-# NASA Nearest Earth Objects Project in Python
-
 ## Synopsis
 This is a project I did independently to practice my model building skills. This project includes:
 - Data exploration and preprocessing using Pandas
