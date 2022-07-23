@@ -32,13 +32,13 @@ The attributes of this dataset are:
 ## Exploratory Data Analysis
 Table 1 shows a summary of all the variables. There are no quality scores below 3 or above 8, so there’s no really high or low quality wines. This may skew results because there’s no data on the makeup of a “perfect” wine. 
 
-![](./images/Table 1.PNG)
+![]({{ "/assets/Table1.png" | absolute_url }})
 
    _Table 1_
 
 A histogram of the quality scores shows the distribution of the dependent variable in Figure 1. This shows that a large majority of the scores lie between 4 and 6, so most of the wines included in the dataset are of average quality. The lack of data for very low and very high-quality wines may mean the models created from this dataset are less robust to added instances.
 
-![](./images/fig1.png)
+![]({{ "/assets/F1.png" | absolute_url }})
 
    _Figure 1_
 
@@ -48,7 +48,7 @@ Other important aspects of Figure 2 are the pairs of variables with strong corre
 
 Variables that are strongly correlated with quality based on the scatterplot matrix are volatile acidity (which makes the wine taste like vinegar when high), sulphates, and alcohol percentage. This is the first indication that these variables may be strong predictors of quality.
 
-![](./images/fig2.png)
+![]({{ "/assets/F2.png" | absolute_url }})
 
    _Figure 2_
 
@@ -57,7 +57,7 @@ For the final aspect of the exploratory data analysis, I created a 3D interactiv
 
 Most of the higher-quality wines are grouped together on the left side of the plot, with higher alcohol levels, lower volatile acidity, and moderate to high sulphate levels. This graphic also shows that outliers tend to have lower quality scores. Very high or low values for any one of the variables make the wine less desirable. 
 
-![](./images/fig3.png)
+![]({{ "/assets/F3.png" | absolute_url }})
 
    _Figure 3_
 
@@ -67,14 +67,14 @@ In the scatterplot matrix in Figure 2, the bottom row of scatterplots shows the 
 
 I began by running best subset selection with a maximum of 10 variables included using the _leaps_ package. To choose an appropriate number of variables to include in the subset, I plotted the residual sum of squares and adjusted R2 versus the number of variables (Figure 4). The plots show that both RSS and R2 start to level off at about six variables, so that is a reasonable choice for the number of variables to include in the subset.
 
-![](./images/fig4.png)
+![]({{ "/assets/F4.png" | absolute_url }})
 
    _Figure 4_
   
 
 The best subset selection method, forward, and backward stepwise selection all produced the same results. As shown in Figure 5, the six variables that should be included are volatile acidity, chlorides, total sulfur dioxide, pH, sulphates, and alcohol percentage. 
 
-![](./images/fig5.png)
+![]({{ "/assets/F5.png" | absolute_url }})
 
    _Figure 5_
 
@@ -92,7 +92,7 @@ A graph of the basic classification tree is shown in Figure 6. Running the decis
 
 The variable importance output showed that alcohol percentage was the most important variable, and chlorides and pH level were the least important variables. The classification tree is a valid one, even though it could be more accurate.
 
-![](./images/fig6.png)
+![]({{ "/assets/F6.png" | absolute_url }})
 
    _Figure 6_
 
@@ -107,7 +107,7 @@ The out-of-bag error estimate from the training set model is 20%, and the accura
 
 The variable importance plot in Figure 7 indicates that the six most important variables according to the random forest model are nearly the same as the six variables chosen in the best subset selection methods, with density replacing pH in the top six. This indicates that pH is one of the weaker predictors of quality as compared to alcohol, sulfates, and volatile acidity.
 
-![](./images/fig7.png)
+![]({{ "/assets/F7.png" | absolute_url }})
 
 _Figure 7_
 
@@ -123,7 +123,7 @@ From the p-values for the independent variables shown in the output, pH is not i
 
 I created an effects graph from the _effects_ package to show how each variable affected the logistic regression model. The plot for pH is on the bottom left of the graphic. From this effects graph, it appears that the quality correlation is weak. The blue shading indicates that for low and high pH values, there are large confidence intervals. This most likely is due to the fact that most wines have a pH value near 3.4; the further away from 3.4 the pH value is, the less confident the model is in its prediction. There may be an advantage to leaving out pH. 
 
-![](./images/fig8.png)
+![]({{ "/assets/F8.png" | absolute_url }})
 
 _Figure 8_
 
@@ -136,7 +136,7 @@ The last classification model is a cluster analysis using k-means clustering. I 
 Running k-means classification from the cluster package didn’t have a great degree of accuracy. The first cluster, which is highlighted in red in Figure 8, was 64% bad wines, and the second cluster, highlighted in blue, is 59% good wines. Most outliers are included in the first cluster. From the exploratory data analysis, we know that outliers tend to be bad wines, which is possibly why cluster 1 contains a majority of bad wines. This was not an efficient model for this dataset.
 
 
-![](./images/fig9.png)
+![]({{ "/assets/F9.png" | absolute_url }})
 
 _Figure 9_
 
