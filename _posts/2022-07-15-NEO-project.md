@@ -35,7 +35,7 @@ The attributes of this dataset are:
 - *hazardous* : whether the asteriod is potentially harmful or not
 
 ## Exploratory Data Analysis and Pre-processing
-This dataset has 10 columns and 90,836 rows. It has no missing values. Peeking at the first 10 rows of data reveals what the data looks like: 1
+This dataset has 10 columns and 90,836 rows. It has no missing values. Peeking at the first 10 rows of data reveals what the data looks like: 
 
 ![]({{ "/assets/table1.png" | absolute_url }})
 
@@ -45,7 +45,7 @@ A cursory examination of the dataset shows that *orbiting_body* and *sentry_obje
 
 We also see that id and name each only have 27,423 unique values. This means that the same asteroid is measured multiple times. Let's take a look at one of these asteroids to see what changes with each record:
 
-![](./images/table2.png)
+![]({{ "/assets/table2.png" | absolute_url }})
 
 _Table 2_
 
@@ -53,13 +53,13 @@ Looking at Table 2, it appears that *relative_velocity* and *miss_distance* chan
 
 We would assume intuitively that most of these asteroids are not hazardous, because if most asteroids were hazardous we would probably have a lot more collisions with them! The imbalance is not too extreme though- about 9.7% of objects are classified as hazardous. This can be handled with a stratified train-test split later on.
 
-![](./images/fig1.png)
+![]({{ "/assets/fig1.png" | absolute_url }})
 
 _Figure 1_
 
 Next, a correlation heatmap in Figure 2 shows that *est_diameter_min* and *est_diameter_max* are perfectly correlated. This means we only need to keep one of these variables, so we will drop *est_diameter_min*.
 
-![](./images/fig2.png)
+![]({{ "/assets/fig2.png" | absolute_url }})
 
 _Figure 2_
 
@@ -92,7 +92,7 @@ To see if there is any pattern, I created boxplots for hazardous and non-hazardo
 
 Possible reasons why hazardous objects were not discovered until more recently could be that hazardous asteroids tend to be farther away (as we will discover from figure 5), and it is possible that older equipment could not detect asteroids that are further away from earth as well. Another possible reason is that hazardous objects tend to have a lower absolute magnitude (also infered from figure 5), or luminosity, making them even harder to detect with older equipment.
 
-![](./images/fig3.png)
+![]({{ "/assets/fig3.png" | absolute_url }})
 
 _Figure 3_
 
@@ -102,7 +102,7 @@ To perform univariate and bivariate analysis, I began by extracting the numerica
 
 First I checked the distribution of the variables, shown in figure 4. First, notice that the distribution for estimated maximum diameter is highly positively skewed with sharp spike on the left, indicating the presence of outliers. Relative velocity has a positive skew, so most asteroids are moving more slowly. The distance from earth, *miss_distance*, seems to be relatively uniform throughout the data, with a bit of a spike at 0. Finally, we see that most observations of asteroids were recorded after 1990, so data from before 1990 might not be as useful.
 
-![](./images/fig4.png)
+![]({{ "/assets/fig4.png" | absolute_url }})
 
 _Figure 4_
 
@@ -110,7 +110,7 @@ For bivariate analysis, I started with a pairs plot that is colored by *hazardou
 
 First, the distributions along the diagonal are interesting because they add more information to our univariate analysis concerning the classification of asteroids as hazardous. From the relative velocity distribution, it seems that hazardous asteroids move slightly faster than non-hazardous ones. From the distributions of *miss_distance* and *absolute_magnitude*, we see that hazardous asteroids actually tend to be further away from earth, which is counter-intuitive. There is also a very clear correlation between *est_diameter_max* and *absolute_magnitude*, so it may be beneficial to only include one of these variables for certain models.
 
-![](./images/fig5.png)
+![]({{ "/assets/fig5.png" | absolute_url }})
 
 _Figure 5_
 
@@ -178,17 +178,17 @@ I knew the basic decision tree classifier would not be the most accurate, howeve
 
 The decision tree ended up being too large to be especially helpful. The models scores are shown in table 3 below. I also plotted the ROC curve for the model, which shows that it is a decent model compared to a random model, but certainly not good enough for predicting hazardous asteroids.
 
-![](./images/DTTable.png)
+![]({{ "/assets/DTTable.png" | absolute_url }})
 
 _Table 3_
 
-![](./images/DTRoc.png)
+![]({{ "/assets/DTRoc.png" | absolute_url }})
 
 _Figure 6_
 
 I plotted the variable importance for all of the tree-based models. The importance for each variable is shown in figure 7. This decision tree model mainly uses the diameter to classify the objects, which is interesting because the diameter does not vary much between asteroids. The variables *miss_distance* and *relative_velocity* are also important variables in this tree, which makes sense with the correlations we saw in figure 5 between those two variables and the hazardous classification.
 
-![](./images/DTVars.png)
+![]({{ "/assets/DTVars.png" | absolute_url }})
 
 _Figure 7_
 
@@ -217,17 +217,17 @@ feat_importances.plot(kind='barh', title='Variable Importance for Decision Tree'
 
 Next I wanted to try K Nearest Neighbors because I wanted a model that was not tree-based, and I figured clustering makes sense because intuitively, you would expect asteroids that are similar to have the same classification. I was surprised by how well it performed. I used the elbow method to choose k, and based on figure 8 I chose k=15. 
 
-![](./images/KNNError.png)
+![]({{ "/assets/KNNError.png" | absolute_url }})
 
 _Figure 8_
 
 K Nearest Neighbors performed much better than the decision tree, but an accuracy of 91% still is not quite as high as we would like, considering the importance of classifying asteroids correctly. The recall is fairly high which is especially important. Overall, this model is good, but not up to NASA standards.
 
-![](./images/KNNTable.png)
+![]({{ "/assets/KNNTable.png" | absolute_url }})
 
 _Table 4_
 
-![](./images/KNNRoc.png)
+![]({{ "/assets/KNNRoc.png" | absolute_url }})
 
 _Figure 9_
 
@@ -267,17 +267,17 @@ For the next model, I decided to try Random Forest to improve on the decision tr
 
 Hyperparameter tuning using GridSearch showed that the default settings were sufficient, although recall can be improved slightly by using *max_depth=16* and *n_estimators= 256* for the models parameters. I decided to keep the default parameters to improve all other metrics. The accuracy for this model, shown in table 5, is close to 93%. This is the best accuracy I was able to get from any of the models. The AUC is also very high for this model, as shown in figure 10.
 
-![](./images/RFTable.png)
+![]({{ "/assets/RFTable.png" | absolute_url }})
 
 _Table 5_
 
-![](./images/RFRoc.png)
+![]({{ "/assets/RFRoc.png" | absolute_url }})
 
 _Figure 10_
 
 Finally, I wanted to see the variable importance plot for random forest, shown in figure 11. I found it very interesting that all the variables are very close to each other in importance. The diameter and miss distance variables are still both the most important, but relative velocity and absolute magnitude are still very important compared to the basic decision tree. 
 
-![](./images/RFVars.png)
+![]({{ "/assets/RFVars.png" | absolute_url }})
 
 _Figure 11_
 
@@ -318,17 +318,17 @@ The last model I chose to create is a gradient boosted decision tree from the Ex
 
 Overall, the gradient boosted decision tree performed nearly as well as the random forest. All of the metrics from table 6 are just slightly less than those for the random forest model, with the exception of recall. The gradient boosted classifier outperformed the random forest model in recall by a little bit. However, because we know recall is an important metric in this specific case due to the consequences of a false negative, the decision maker may prefer to sacrifice accuracy and precision a little bit to improve recall.
 
-![](./images/XGBTable.png)
+![]({{ "/assets/XGBTable.png" | absolute_url }})
 
 _Table 6_
 
-![](./images/XGBRoc.png)
+![]({{ "/assets/XGBRoc.png" | absolute_url }})
 
 _Figure 12_
 
 The variable importance plot for the gradient boosted machine is very interesting. It is almost opposite of the variable importance plot for random forest. It values the diameter variable the most, just like in the other plots, but all other variables are much less important. It does not even appear to use the absolute magnitude at all. It is interesting how different this variable importance plot is compared to random forest, considering how similarly the two models performed.
 
-![](./images/XGBVars.png)
+![]({{ "/assets/XGBVars.png" | absolute_url }})
 
 _Figure 13_
 
@@ -358,7 +358,7 @@ feat_importances_XGB.plot(kind='barh', title = 'Variable Importance for Gradient
 
 Overall, it is clear that both Random Forest classification and Gradient Boosted classification outperformed the Decision Tree and K Nearest Neighbors. I was very impressed with how accurate both the Random Forest and Gradient Boosted models were. They both had very high AUC, accuracy, and recall scores. As I've mentioned, recall is especially important in this case. Decision makers using these models would need to decide if the slight increase in recall for the Gradient Boosted model over the Random Forest model is worth sacrificing a little bit of accuracy and AUC. However, I believe either model would be a good choice.
 
-![](./images/FinalTable.png)
+![]({{ "/assets/FinalTable.png" | absolute_url }})
 
 _Table 7_
 
