@@ -5,9 +5,8 @@ subtitle: Final Project for Stats 515
 cover-img: /assets/img/index.jpg
 tags: [R]
 ---
-# Red Wine Quality Analysis Project in R
 
-This is my final project for Stats 515 at George Mason University. See a project I created in Python here: [Nearest Earth Objects Analysis Project](https://asoderlund.github.io/NEO-Analysis/).
+This is my final project for Stats 515 at George Mason University. This project was done entirely in R.
 
 Wine is a complex product with many facets that contribute to taste and quality. Understanding the major factors that attribute most to the quality of a wine is an important business analysis issue. My project attempts to understand what attributes impact the quality of a wine and how one can predict a wine’s quality by performing exploratory data analysis, variable subset selection, and creating multiple classification models. 
 
