@@ -37,7 +37,7 @@ The attributes of this dataset are:
 ## Exploratory Data Analysis and Pre-processing
 This dataset has 10 columns and 90,836 rows. It has no missing values. Peeking at the first 10 rows of data reveals what the data looks like:
 
-![](https://github.com/asoderlund/asoderlund.github.io/blob/master/assets/img/table1.png)
+![](https://drive.google.com/file/d/1tGWTvTZo9ESg0Vv2GVLYJ7ytuvNE4L7y/view?usp=sharing)
 
 _Table 1_
 
