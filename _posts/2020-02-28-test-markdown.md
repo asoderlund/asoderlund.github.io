@@ -2,10 +2,9 @@
 layout: post
 title: NASA Nearest Earth Objects Project
 subtitle: Portfolio Project
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
-comments: true
+gh-repo: asoderlund/NEO-Analysis
+tags: [python]
+comments: false
 ---
 
 ## The Dataset
