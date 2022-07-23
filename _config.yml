@@ -50,7 +50,7 @@ round-avatar: true
 social-network-links:
   email: "ahowe615@gmail.com"
   #rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  #facebook: deanattali
+  linkedin: linkedin.com/in/alyssa-soderlund
   github: asoderlund
   #twitter: daattali
   #patreon: DeanAttali
@@ -96,7 +96,7 @@ share-links-active:
 # url-pretty: "MyWebsite.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 20
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
