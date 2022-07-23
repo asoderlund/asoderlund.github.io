@@ -6,6 +6,14 @@ gh-repo: asoderlund/NEO-Analysis
 tags: [python]
 comments: false
 ---
+## Synopsis
+This is a project I did independently to practice my model building skills. This project includes:
+- Data exploration and preprocessing using Pandas
+- Visualizations using Seaborn and Matplotlib 
+- String parsing
+- Classification Model building using SciKitLearn and XGBoost
+- Model tuning using GridSearchCV
+- Analysis of model performance using confusing matrix and ROC metrics
 
 ## The Dataset
 The dataset comes from the NASA Open API and NEO Earth Close Approaches. It can be found on Kaggle here: [Data](https://www.kaggle.com/datasets/sameepvani/nasa-nearest-earth-objects). I am using version 2 of this dataset.
