@@ -5,7 +5,7 @@ subtitle: Final Project for Stats 515
 cover-img: /assets/img/index.jpg
 tags: [R]
 ---
-# Red Wine Analysis Project by Alyssa Soderlund
+# Red Wine Quality Analysis Project in R
 
 This is my final project for Stats 515 at George Mason University. See a project I created in Python here: [Nearest Earth Objects Analysis Project](https://asoderlund.github.io/NEO-Analysis/).
 
