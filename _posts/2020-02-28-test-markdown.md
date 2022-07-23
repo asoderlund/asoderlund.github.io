@@ -39,7 +39,7 @@ This dataset has 10 columns and 90,836 rows. It has no missing values. Peeking a
 
 _Table 1_
 
-
+ 
 A cursory examination of the dataset shows that *orbiting_body* and *sentry_object* each only have 1 unique value, so they are dropped from the table.
 
 We also see that id and name each only have 27,423 unique values. This means that the same asteroid is measured multiple times. Let's take a look at one of these asteroids to see what changes with each record:
