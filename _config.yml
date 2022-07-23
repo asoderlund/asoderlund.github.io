@@ -22,8 +22,8 @@ author: Alyssa Soderlund
 navbar-links:
   About Me: "aboutme"
   Projects:
-    - NASA Nearest Earth Objects: "https://beautifuljekyll.com"
-    - Red Wine Quality: "https://www.markdowntutorial.com/"
+    - NASA Nearest Earth Objects: "https://asoderlund.github.io/NEO-Analysis/"
+    - Red Wine Quality: "https://asoderlund.github.io/WineAnalysis/"
   Author's home: "https://deanattali.com"
 
 ################
