@@ -32,7 +32,7 @@ The attributes of this dataset are:
 ## Exploratory Data Analysis
 Table 1 shows a summary of all the variables. There are no quality scores below 3 or above 8, so there’s no really high or low quality wines. This may skew results because there’s no data on the makeup of a “perfect” wine. 
 
-![Table 1]({{ "/assets/Table1.png" | absolute_url }})
+![]({{ "/assets/Table1.png" | absolute_url }})
 
    _Table 1_
 
