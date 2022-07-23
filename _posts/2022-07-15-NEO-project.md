@@ -9,7 +9,7 @@ comments: false
 ---
 
 ## Synopsis
-This is a project I did independently to practice my model building skills. This project includes:
+This is a project I did independently to practice my model building skills. This project includes:  
 - Data exploration and preprocessing using Pandas
 - Visualizations using Seaborn and Matplotlib 
 - String parsing
@@ -37,7 +37,7 @@ The attributes of this dataset are:
 ## Exploratory Data Analysis and Pre-processing
 This dataset has 10 columns and 90,836 rows. It has no missing values. Peeking at the first 10 rows of data reveals what the data looks like:
 
-![](https://github.com/asoderlund/asoderlund/blob/master/table1.png)
+![](./asoderlund/blob/master/table1.png)
 
 _Table 1_
 
