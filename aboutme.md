@@ -11,3 +11,6 @@ I received my bachelors in mathematics and minor in computer science from Christ
 I have always been the kind of person who loves to solve puzzles, and I see every dataset as a puzzle just waiting to be solved. It is fascinating to see what secrets can be unearthed from the analytics process.
 
 If you would like to know more about my background, check out my LinkedIn profile and my portfolio projects!
+
+[My LinkedIn](https://www.linkedin.com/in/alyssa-soderlund/)  
+[My GitHub](https://github.com/asoderlund)
