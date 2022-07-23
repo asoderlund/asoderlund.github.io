@@ -4,7 +4,9 @@ title: About me
 subtitle: Background
 ---
 
-Im in school
+Hi! I'm Alyssa Soderlund. I am currently studying for my masters of engineering in data analytics at George Mason University. I am a former teacher transitioning into the world of data science!
+
+I received my bachelors
 
 ### My story
 
