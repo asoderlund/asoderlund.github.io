@@ -47,13 +47,25 @@ They gained first position for 75% of key last-minute hotel searches[^7].
 They also saw a 266% increase in non-brand mobile bookings, a 115% increase in non-brand mobile investment, and a 650% increase in share-of-voice for key travel search queries[^7]. 
 Red Roof Inn received several awards for this project, including gold awards for the 2014 Interactive Advertising Bureau MIXX Awards: Search Marketing, the Mobile Marketing Association’s 2014 Global Smarties Award, the MediaPost’s 2014 OMMA Awards for Search Marketing: SEM Campaign, the 2014 US Search Awards: Best Mobile Campaign, and the Digiday Sammy/Mobi Awards: Best Mobile Direct Response Campaign[^6].
 
-## References
+#### References
+
+[^1]: The Red Roof Difference. (2022). Red Roof Franchising. https://www.redrooffranchising.com/about/our-history
+
+[^2]: Martins, A. (2019, March 21). 50 Best Hotel Franchise Opportunities for Sale and Their Cost. ProfitableVenture Franchise. https://www.profitableventure.com/franchise/hotel-opportunities/#Red_Roof_Inn 
+
+[^3]: Red Roof Inn Turns Flight Cancellations into Customers. (2014). In MMA Global. https://www.mmaglobal.com/case-study-hub/upload/pdfs/mma-2014-827.pdf  
 
 [^4]: Bloom, A. (2015, May 26). 20 Examples of ROI and Results with Big Data. Vmware.com; 20 Examples of ROI and Results with Big Data. https://tanzu.vmware.com/content/blog/20-examples-of-roi-and-results-with-big-data  
-[^8]: Marr, B. (2016, January 26). How Big Data And Analytics Are Changing Hotels And The Hospitality Industry. Forbes. https://www.forbes.com/sites/bernardmarr/2016/01/26/how-big-data-and-analytics-changing-hotels-and-the-hospitality-industry/?sh=5f85e5701c22  
-[^2]: Martins, A. (2019, March 21). 50 Best Hotel Franchise Opportunities for Sale and Their Cost. ProfitableVenture Franchise. https://www.profitableventure.com/franchise/hotel-opportunities/#Red_Roof_Inn  
-[^3]: Red Roof Inn Turns Flight Cancellations into Customers. (2014). In MMA Global. https://www.mmaglobal.com/case-study-hub/upload/pdfs/mma-2014-827.pdf  
+
+[^5]: Smith, N. (2014, October 17). Red Roof Inn Turns Weather Woes Into Major Sales. Lima. https://www.limaconsulting.com/red-roof-inn/#:~:text=Leveraging%20open%20data%E2%80%94or%20free%20 information%20such%20as%20 government
+
+[^6]: Zhu, K. (2014, October 20). Red Roof Inn® Paving The Way In Digital Innovation. Franchising.com. https://www.franchising.com/news/20141020_red_roof_innreg_paving_the_way_in_digital_innovati.html
+
 [^7]: Roper, P. (2014, December). November Best Global Digital Marketing: Red Roof Inn’s search campaign, Burger King’s Motel, Turkish shoppable soap opera. Marketing Magazine. https://www.marketingmag.com.au/news-c/november-best-global-digital-marketing-red-roof-inns-search-campaign-burger-kings-motel-turkish-shoppable-soap-opera/  
-[^5]: Smith, N. (2014, October 17). Red Roof Inn Turns Weather Woes Into Major Sales. Lima. https://www.limaconsulting.com/red-roof-inn/#:~:text=Leveraging%20open%20data%E2%80%94or%20free%20 information%20such%20as%20 government  
-[^1]: The Red Roof Difference. (2022). Red Roof Franchising. https://www.redrooffranchising.com/about/our-history  
-[^6]: Zhu, K. (2014, October 20). Red Roof Inn® Paving The Way In Digital Innovation. Franchising.com. https://www.franchising.com/news/20141020_red_roof_innreg_paving_the_way_in_digital_innovati.html  
+
+[^8]: Marr, B. (2016, January 26). How Big Data And Analytics Are Changing Hotels And The Hospitality Industry. Forbes. https://www.forbes.com/sites/bernardmarr/2016/01/26/how-big-data-and-analytics-changing-hotels-and-the-hospitality-industry/?sh=5f85e5701c22  
+ 
+
+
+  
+  
