@@ -11,6 +11,7 @@ This is a review of how Red Roof Inn used
 ## About Red Roof Inn
 The Red Roof Inn, established in 1973 in Columbus, Ohio, is a chain of affordable hotel accommodations across the United States[^1]. 
 They boast over 600 locations, most of which are in the midwest and eastern states[^1]. 
+
 In 1996, the company started franchising; in 2019 Red Roof Inn was ranked second in the Best Hotel Franchise Opportunities by Profitable Venture Magazine[^2]. 
 In 2012, the chain invested $200 million into renovations for their hotels nationwide[^2]. 
 As part of this investment, Red Roof Inn created a team to leverage big data analysis in order to target advertisements towards travelers who experienced canceled flights at nearby airports[^3].  
@@ -22,6 +23,7 @@ This data included government statistics and nationwide weather data, as well as
 The copious amounts of data then needed to be analyzed in order to determine when and where flights were most likely to be delayed overnight or when they were completely canceled. 
 The analysis determined that 2 to 3% of flights, or around 500 flights each day, were either delayed or canceled, leaving approximately 90,000 passengers stranded[^5]. 
 Therefore, the team decided to try to target advertisements towards stranded passengers because many Red Roof Inn locations are very close to major airports across the country[^6].
+
 Partnering with the digital company 360i, Red Roof Inn created a technology that could “process thousands of bits of live cancellation data and filter it through a conditional algorithm that automatically boosted bids” to show ads that targeted stranded passengers[^6]. 
 This algorithm considered current weather conditions, time of day, and volume of cancellations  to predict the optimal time to increase bids for advertisements[^5]. 
 These advertisements were specifically targeted towards passengers doing mobile searches for last-minute lodging. 
@@ -34,6 +36,7 @@ To find the target audience, the brand combined geodata with a specific set of s
 Since most of the data used for this project was publicly available real-time data, data access was not a major challenge for the company. 
 Projects involving any kind of advertisements have basic constraints on privacy issues, but privacy issues were not a major concern in this project either. 
 The quality of the data in this case was strong, as weather and flight cancellation data tend to be very accurate.
+
 The biggest challenge Red Roof Inn and 360i faced was increasing bids for advertisement space, such as when the timing was optimal to reach people as soon as they were using mobile devices to search for hotels[^7]. 
 Red Roof Inn had problems competing with other companies for advertisement space, especially with the limited real estate of mobile devices, within their budgetary constraints[^3]. 
 The Flight Cancellation Coup technology had to process API data very quickly between the time that a flight was delayed or canceled to the time stranded passengers started searching for nearby lodging[^7]. 
