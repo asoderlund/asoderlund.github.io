@@ -17,7 +17,7 @@ In 2012, the chain invested $200 million into renovations for their hotels natio
 
 As part of this investment, Red Roof Inn created a team to leverage big data analysis in order to target advertisements towards travelers who experienced canceled flights at nearby airports[^3].  
 
-![]({{ "/assets/Picture1.png" | absolute_url }})
+![]({{ "/assets/R.png" | absolute_url }})
 
 ## Methodology  
 
