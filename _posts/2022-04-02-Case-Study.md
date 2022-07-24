@@ -6,7 +6,7 @@ tags: [Case Study]
 ---
 
 ## Synopsis
-This is a review of how Red Roof Inn used 
+This is a review of how Red Roof Inn leveraged nationwide weather data and historic flight cancellation data to hyper-target ads to stranded airline passengers. The success of this project lead to the company's record-breaking sales during an especially harsh winter. 
 
 ## About Red Roof Inn
 The Red Roof Inn, established in 1973 in Columbus, Ohio, is a chain of affordable hotel accommodations across the United States[^1]. 
@@ -14,23 +14,28 @@ They boast over 600 locations, most of which are in the midwest and eastern stat
 
 In 1996, the company started franchising; in 2019 Red Roof Inn was ranked second in the Best Hotel Franchise Opportunities by Profitable Venture Magazine[^2]. 
 In 2012, the chain invested $200 million into renovations for their hotels nationwide[^2]. 
+
 As part of this investment, Red Roof Inn created a team to leverage big data analysis in order to target advertisements towards travelers who experienced canceled flights at nearby airports[^3].  
+
+![]({{ "/assets/Picture1.png" | absolute_url }})
 
 ## Methodology  
 
-This so-called Flight Cancellation Coup project began with its team gathering public data. 
+This so-called *Flight Cancellation Coup* project began by gathering public data. 
 This data included government statistics and nationwide weather data, as well as historic flight delay and cancellation data[^4]. 
-The copious amounts of data then needed to be analyzed in order to determine when and where flights were most likely to be delayed overnight or when they were completely canceled. 
-The analysis determined that 2 to 3% of flights, or around 500 flights each day, were either delayed or canceled, leaving approximately 90,000 passengers stranded[^5]. 
+The copious amounts of data then needed to be analyzed in order to determine when and where flights were most likely to be delayed overnight or when they were completely canceled.
+
+**The analysis determined that 2 to 3% of flights, or around 500 flights each day, were either delayed or canceled, leaving approximately 90,000 passengers stranded**[^5]. 
 Therefore, the team decided to try to target advertisements towards stranded passengers because many Red Roof Inn locations are very close to major airports across the country[^6].
 
 Partnering with the digital company 360i, Red Roof Inn created a technology that could “process thousands of bits of live cancellation data and filter it through a conditional algorithm that automatically boosted bids” to show ads that targeted stranded passengers[^6]. 
 This algorithm considered current weather conditions, time of day, and volume of cancellations  to predict the optimal time to increase bids for advertisements[^5]. 
+
 These advertisements were specifically targeted towards passengers doing mobile searches for last-minute lodging. 
 The Flight Cancellation Coup algorithm also personalized messages, such as “Stranded at O’Hare? Check out Red Roof Inn” along with how far away the nearest Red Roof Inn was located[^5]. 
 To find the target audience, the brand combined geodata with a specific set of search queries to hyper-target people looking for nearby economy lodging[^3].
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/107335362?h=299639e687" width="640" height="362" frameborder="0" allowfullscreen></iframe>
+![]({{ "/assets/Picture2.png" | absolute_url }})
 
 ## Challenges
 
@@ -42,6 +47,8 @@ The biggest challenge Red Roof Inn and 360i faced was increasing bids for advert
 Red Roof Inn had problems competing with other companies for advertisement space, especially with the limited real estate of mobile devices, within their budgetary constraints[^3]. 
 The Flight Cancellation Coup technology had to process API data very quickly between the time that a flight was delayed or canceled to the time stranded passengers started searching for nearby lodging[^7]. 
 They did not want to increase bids too early or too late in order to stay within budgetary constraints[^7]. 
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/107335362?h=299639e687" width="640" height="362" frameborder="0" allowfullscreen></iframe>
 
 ## Results
 
