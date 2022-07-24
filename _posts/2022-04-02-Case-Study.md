@@ -30,6 +30,7 @@ These advertisements were specifically targeted towards passengers doing mobile 
 The Flight Cancellation Coup algorithm also personalized messages, such as “Stranded at O’Hare? Check out Red Roof Inn” along with how far away the nearest Red Roof Inn was located[^5]. 
 To find the target audience, the brand combined geodata with a specific set of search queries to hyper-target people looking for nearby economy lodging[^3].
 
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/107335362?h=299639e687" width="640" height="362" frameborder="0" allowfullscreen></iframe>
 
 ## Challenges
 
