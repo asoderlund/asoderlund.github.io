@@ -20,7 +20,7 @@ This project includes:
 - Creating an interactive dashboard
 
 ## The Datasets
-The dataset used for this project comes from the USDA Research Data Archive. It contains information about wildfires that occurred in the United States from 1992 to 2018. It is a conglomeration of data from several different fire organizations at federal, state, and local levels. This dataset contains specifics about the location, size, date, causes, and other information for every wildfire in the United States. I also incoporated a dataset including the land area of counties in the US. 
+The dataset used for this project comes from the USDA Research Data Archive. It contains information about 1.88 million wildfires that occurred in the United States from 1992 to 2018. It is a conglomeration of data from several different fire organizations at federal, state, and local levels. This dataset contains specifics about the location, size, date, causes, and other information for every wildfire in the United States. I also incoporated a dataset including the land area of counties in the US. 
 
 Specifically, this project focused on the variables involving the location, duration, size, and number of wildfires for each county.
 
@@ -44,12 +44,9 @@ I had to create calculated variables for each of these: average burn duration, a
 
 For each of the calculated variables, I assigned a score from 0-5 based on the distribution of the data. I then averaged these 3 scores to get my final fire risk score for each county.
 
-Once the calculated variables were finished, it was fairly simple to create the map. I decided to use circles for each county
+Once the calculated variables were finished, it was fairly simple to create the map. I decided to use circles for each county and colors for the main cause of wildfires for that county. I decided for the cause of wildfires that I wanted to show the most common causes country-wide as well. So instead of the default legend, I created a bar chart using the same color scheme as the map. This way the bar chart acts as both the legend and a way to add more information to the visualization.
 
+I edited the tooltips to include the county and state name, fire risk score, and main cause of wildfires. I added filters by state and by fire risk score, to make it easier for users to find their own area or see where in the US is at most risk for severe wildfires. 
 
-
-
-
-
-
+After some minor cosmetic alterations, the map was complete. Future alterations will hopefully include fixing the legend for circle size so that the circles are not cut off. This is a visualization I plan to continually update. 
 
