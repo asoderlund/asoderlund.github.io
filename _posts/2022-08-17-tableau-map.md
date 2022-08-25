@@ -2,6 +2,7 @@
 layout: post
 title: US Wildfires Visualization in Tableau
 subtitle: Portfolio Project
+cover-img: /assets/wildfiremap.png
 tags: [tableau]
 comments: false
 ---
