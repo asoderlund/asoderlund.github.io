@@ -33,5 +33,7 @@ Specifically, this project focused on the variables involving the location, dura
 The map does not work for mobile devices. A screenshot of the map is included below.
 
 
+![]({{ "/assets/map screenshot.png" | absolute_url }})
+
 
 ## The Process
