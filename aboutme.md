@@ -14,3 +14,4 @@ If you would like to know more about my background, check out my LinkedIn profil
 
 [My LinkedIn](https://www.linkedin.com/in/alyssa-soderlund/)  
 [My GitHub](https://github.com/asoderlund)
+[My Tableau Public Page](https://public.tableau.com/app/profile/alyssa.soderlund)
