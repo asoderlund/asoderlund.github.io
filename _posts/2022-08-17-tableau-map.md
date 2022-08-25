@@ -40,7 +40,11 @@ The map does not work for mobile devices. A screenshot of the map is included be
 
 To start this project, I had to do some data exploration and subject area research to decide how to create a score for fire risk. After some research, I learned that the risk of a severe wildfire for a given area is based on the average duration a wildfire burns, the average size of wildfires, and the average number of wildfires each year. 
 
-I had to create calculated variables for each of these: average burn duration, average fire size, average number of wildfires per year. Average burn duration and fire size were simply averages of variables already included in the dataset. The average number of wildfires was a bit more complicated to calculate, as I had to incorporate the land area of the county into this calculation. This is why I incorporated a dataset
+I had to create calculated variables for each of these: average burn duration, average fire size, average number of wildfires per year. Average burn duration and fire size were simply averages of variables already included in the dataset. The average number of wildfires was a bit more complicated to calculate, as I had to incorporate the land area of the county into this calculation. This is why I incorporated a dataset involving FIPS codes by county and the associated land area. 
+
+For each of the calculated variables, I assigned a score from 0-5 based on the distribution of the data. I then averaged these 3 scores to get my final fire risk score for each county.
+
+Once the calculated variables were finished, it was fairly simple to create the map. I decided to use circles for each county
 
 
 
