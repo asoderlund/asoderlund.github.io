@@ -49,4 +49,3 @@ Once the calculated variables were finished, it was fairly simple to create the 
 I edited the tooltips to include the county and state name, fire risk score, and main cause of wildfires. I added filters by state and by fire risk score, to make it easier for users to find their own area or see where in the US is at most risk for severe wildfires. 
 
 After some minor cosmetic alterations, the map was complete. Future alterations will hopefully include fixing the legend for circle size so that the circles are not cut off. This is a visualization I plan to continually update. 
-
