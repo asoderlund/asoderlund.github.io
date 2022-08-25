@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NASA Nearest Earth Objects Project
+title: NASA Nearest Earth Objects Project (Python)
 subtitle: Portfolio Project
 gh-repo: asoderlund/NEO-Analysis
 cover-img: /assets/img/OIP.jpg
