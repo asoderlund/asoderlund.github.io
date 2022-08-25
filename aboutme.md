@@ -13,5 +13,5 @@ I have always been the kind of person who loves to solve puzzles, and I see ever
 If you would like to know more about my background, check out my LinkedIn profile and my portfolio projects!
 
 [My LinkedIn](https://www.linkedin.com/in/alyssa-soderlund/)  
-[My GitHub](https://github.com/asoderlund)
+[My GitHub](https://github.com/asoderlund)  
 [My Tableau Public Page](https://public.tableau.com/app/profile/alyssa.soderlund)
