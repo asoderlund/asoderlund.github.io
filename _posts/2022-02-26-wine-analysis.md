@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Red Wine Quality Analysis Project
+title: Red Wine Quality Analysis Project (R)
 subtitle: Final Project for Stats 515
 cover-img: /assets/img/index.jpg
 tags: [R]
