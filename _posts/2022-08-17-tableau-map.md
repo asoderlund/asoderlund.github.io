@@ -6,7 +6,7 @@ tags: [tableau]
 comments: false
 ---
 
-[Click here to see the interactive map](https://public.tableau.com/app/profile/alyssa.soderlund/viz/USWildfiresMap/Dashboard1)
+[Click here to see the interactive map if you are on a computer](https://public.tableau.com/app/profile/alyssa.soderlund/viz/USWildfiresMap/Dashboard1)
 
 ## Synopsis
 This project is a continuation of a previous project I worked on for a class involving visualization. 
@@ -19,7 +19,7 @@ This project includes:
 - Creating a custom legend
 - Creating an interactive dashboard
 
-## The Dataset
+## The Datasets
 The dataset used for this project comes from the USDA Research Data Archive. It contains information about wildfires that occurred in the United States from 1992 to 2018. It is a conglomeration of data from several different fire organizations at federal, state, and local levels. This dataset contains specifics about the location, size, date, causes, and other information for every wildfire in the United States. I also incoporated a dataset including the land area of counties in the US. 
 
 Specifically, this project focused on the variables involving the location, duration, size, and number of wildfires for each county.
@@ -33,7 +33,19 @@ Specifically, this project focused on the variables involving the location, dura
 The map does not work for mobile devices. A screenshot of the map is included below.
 
 
-![]({{ "/assets/map screenshot.png" | absolute_url }})
+![]({{ "/assets/wildfiremap.png" | absolute_url }})
 
 
 ## The Process
+
+To start this project, I had to do some data exploration and subject area research to decide how to create a score for fire risk. After some research, I learned that the risk of a severe wildfire for a given area is based on the average duration a wildfire burns, the average size of wildfires, and the average number of wildfires each year. 
+
+I had to create calculated variables for each of these: average burn duration, average fire size, average number of wildfires per year. Average burn duration and fire size were simply averages of variables already included in the dataset. The average number of wildfires was a bit more complicated to calculate, as I had to incorporate the land area of the county into this calculation. This is why I incorporated a dataset
+
+
+
+
+
+
+
+
