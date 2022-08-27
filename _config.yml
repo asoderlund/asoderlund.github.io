@@ -21,9 +21,10 @@ author: Alyssa Soderlund
 
 navbar-links:
   About Me: "aboutme"
-  Projects:
-    - NASA Nearest Earth Objects: "https://asoderlund.github.io/2022-07-15-NEO-project/"
-    - Red Wine Quality: "https://asoderlund.github.io/2022-02-26-wine-analysis/"
+  Links: 
+    - LinkedIn: "https://www.linkedin.com/in/alyssa-soderlund/"
+    - Tableau Public: "https://public.tableau.com/app/profile/alyssa.soderlund#!/"
+    - GitHub: "https://github.com/asoderlund"
 
 ################
 # --- Logo --- #
