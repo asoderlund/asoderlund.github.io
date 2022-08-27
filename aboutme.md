@@ -2,9 +2,7 @@
 layout: page
 title: About me
 ---
-
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="alyssa-soderlund" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/alyssa-soderlund?trk=profile-badge">Alyssa Soderlund</a></div>  
-              
+ 
 
 Hi! I'm Alyssa Soderlund. I am currently studying for my masters of engineering in data analytics at George Mason University. I am a former teacher transitioning into the world of data science!
 
@@ -17,3 +15,5 @@ If you would like to know more about my background, check out my LinkedIn profil
 [My LinkedIn](https://www.linkedin.com/in/alyssa-soderlund/)  
 [My GitHub](https://github.com/asoderlund)  
 [My Tableau Public Page](https://public.tableau.com/app/profile/alyssa.soderlund)  
+
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="alyssa-soderlund" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/alyssa-soderlund?trk=profile-badge">Alyssa Soderlund</a>
