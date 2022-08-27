@@ -16,5 +16,4 @@ If you would like to know more about my background, check out my LinkedIn profil
 [My GitHub](https://github.com/asoderlund)  
 [My Tableau Public Page](https://public.tableau.com/app/profile/alyssa.soderlund)  
 
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="alyssa-soderlund" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/alyssa-soderlund?trk=profile-badge">Alyssa Soderlund</a></div>
-              
+     
