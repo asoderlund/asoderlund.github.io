@@ -366,6 +366,16 @@ The variable importance plots revealed that the diameter of an asteroid is the m
 
 I do feel this project was successful in creating fairly accurate and useful models to predict the danger an asteroid near earth poses. It revealed a lot of interesting facts about asteroids, and I would be interested in continuing to improve these models over time.
 
+# Tableau Dashboard 
+[Click here to see the interactive dashboard](https://public.tableau.com/app/profile/alyssa.soderlund/viz/PotentiallyHazardousAsteroids/Bargraphdashboard)
+
+I created an interactive visualization using Tableau for this dataset. The visualization is a bar graph showing how many asteroids are certain distances from Earth. The colors of the bars are associated with realtive velocity or estimated diameter, selected by the user. The user can also choose to include only hazardous asteroids, only non-hazardous asteroids, or all asteroids. The bottom of the visualization shows references for the distance of other planets from Earth. 
+
+This visualization reveals some rather interesting patterns. One thing we see is that most of the near-earth asteroids are located within 20 million kilometers of Earth. However, most of the hazardous near-earth asteroids are between 55-70 million kilometers away. When looking at relative velocity, we can see that for all near-earth asteroids, the ones further away from Earth tend to have a slightly higher velocity. Diameter seems to be highly correlated with distance from Earth, there is a very clear pattern that larger asteroids tend to be further from Earth. 
+
+![]({{ "/assets/Screenshot 2022-10-12 at 13-17-45 Potentially Hazardous Asteroids.png" | absolute_url }})
+
+
 
 #### Thank you so much for reading my project. I appreciate your time. If you have any advice for improving this project, I would love to hear it! Please email me at ahowe615@gmail.com with any comments.
 
