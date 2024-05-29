@@ -3,7 +3,7 @@ layout: post
 title: WIP: Computer Vision Project: Airplane Contrail Detection
 subtitle: Masters Capstone Project
 cover-img: /assets/img/index.jpg
-tags: [AWS], [Roboflow], [Python], [Power BI]
+tags: [AWS]
 ---
 
 This is my capstone project for my Masters from George Mason University. This project was done in a group setting. While I was involved in every aspect of the project to some degree, I was more involved in some aspects than others. This is a very simplified version of a 16-week long project that culminated in a 50 page report. 
