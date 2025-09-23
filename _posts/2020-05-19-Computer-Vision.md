@@ -46,17 +46,15 @@ This dataset, downloaded from the Visual Crossing weather data site, has informa
 
 
 
-# Data Storage and Model Deployment Using AWS
-## Data storage 
-
-![]({{ "/assets/table1.png" | absolute_url }})
-
-   _Table 1_
-
-## Model Deployment
-
-
 # System Architecture
+
+
+Our model requires high-performance computing to train the image detection model. We decided to use a combination of EC2 and S3 for our storage mediums. All of the data is stored in an S3 bucket as a back-up. The sky images, image labels, and ground weather data are then transfered into RDS, where they undergo pre-processing and then are sent back to RDS.
+
+The sky images are then ingested into the storage in EC2. The model is trained and tested using Roboflow, Momentum AI, or Poly-YOLO in Ec2. After the model trains and tests, the performance of each algorithm is checked. If performance is satisfactory, the model is used to produce results. Otherwise, it is re-tuned and the process repeats.
+
+The well-trained model's results are saved to RDS, and organized and displayed in a Power BI report. The project also includes a Python GUI for users to run and view predictions using the model in EC2. 
+
 
 # Computer Vision Algorithms and Roboflow
 ## Annotations with VOTT
