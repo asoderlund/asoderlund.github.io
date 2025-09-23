@@ -114,7 +114,6 @@ X_test_scaled=pd.DataFrame(sc.transform(X_test))
 ```
 </details>
 <br/>
-
 The results of the t-test used to obtain the p-values of each variable are shown below.
 
 *****Add picture
@@ -127,8 +126,6 @@ To validate the results obtained from the t-test, we also performed the Wilcoxon
 
 Based on the results in the table, the variables that showed significant differences between the two datasets at a significance level of 0.05 or less were cloud cover, wind gust speed, and visibility.
 In summary, the only variable that showed significant differences between the two datasets at a significance level of 0.05 or less in both t-test and Wilcoxon rank-sum test was cloud cover. 
-
-
 
 # Dashboard Development
 
