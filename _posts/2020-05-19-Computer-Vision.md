@@ -103,12 +103,17 @@ We also evaluated the variable importance based on the coefficients of the logis
 
 We chose to perform two hypothesis tests, t-test and Wilcoxon rank-sum test, on a dataset with and without contrails to investigate the effect of the weather variables on contrail formation. 
 
-The data was pre-processed using the MinMaxScaler function of the SciKit Learn library to normalize the two types of data (with and without contrails). This was necessary to perform the t-test. See the code snippet for this normalization below. 
+The data was pre-processed using the MinMaxScaler function of the SciKit Learn library to normalize the two types of data (with and without contrails).
 
+<details><summary markdown="span">**Click Here** to see a code snippet for this normalization.</summary>
+```python
 X_train, X_test, y_train, y_test = train_test_split(features,label, test_size = 0.25, random_state = 0, stratify=label)    
 sc=MinMaxScaler()
 X_train_scaled=pd.DataFrame(sc.fit_transform(X_train))
 X_test_scaled=pd.DataFrame(sc.transform(X_test))
+```
+</details>
+<br/>
 
 The results of the t-test used to obtain the p-values of each variable are shown below.
 
@@ -122,6 +127,8 @@ To validate the results obtained from the t-test, we also performed the Wilcoxon
 
 Based on the results in the table, the variables that showed significant differences between the two datasets at a significance level of 0.05 or less were cloud cover, wind gust speed, and visibility.
 In summary, the only variable that showed significant differences between the two datasets at a significance level of 0.05 or less in both t-test and Wilcoxon rank-sum test was cloud cover. 
+
+
 
 # Dashboard Development
 
