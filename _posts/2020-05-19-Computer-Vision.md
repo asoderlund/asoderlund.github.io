@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WIP- Computer Vision Project- Airplane Contrail Detection
+title: Computer Vision Project- Airplane Contrail Detection
 subtitle: Masters Capstone Project
 cover-img: /assets/img/index.jpg
 tags: [AWS]
@@ -9,7 +9,9 @@ tags: [AWS]
 This is my capstone project for my Masters from George Mason University. This project was done in a group setting. While I was involved in every aspect of the project to some degree, I was more involved in some aspects than others. This is a very simplified version of a 16-week long project that culminated in a 50 page report. 
 
 # Context
-Contrails are are created when airplanes fly through an ice supersaturated regsion (ISSR), which have sufficiently cold and humid conditions to turn the exhaust gas discharged from the airplane into ice crystals. These contrails appear as thin white lines that form behind the plane, and many only last a few seconds. However, certain conditions cause these contrails to remain longer. Contrails that last up to 10 minutes are called short-lived contrails, and contrails that last longer than 10 minutes (and up to 10 hours) are called long-lived contrails. When a long-lived contrail spreads out and loses it's linear shape, it is called a cirrus contrail. 
+Contrails are are created when airplanes fly through an ice supersaturated regsion (ISSR), which have sufficiently cold and humid conditions to turn the exhaust gas discharged from the airplane into ice crystals. These contrails appear as thin white lines that form behind the plane, and many only last a few seconds. However, certain conditions cause these contrails to remain longer. 
+
+Contrails that last up to 10 minutes are called short-lived contrails, and contrails that last longer than 10 minutes (and up to 10 hours) are called long-lived contrails. When a long-lived contrail spreads out and loses it's linear shape, it is called a cirrus contrail. 
 
 Long-lived contrails and cirrus contrails are the primary contributors to global warming. Aviation generates 4% of global warming, and since more than half of the aviation industry's contribution to gloval warming is from contrails, contrails contribute 2%of the total anthropogenic global heating.
 
@@ -19,15 +21,15 @@ This project aims to identify the correlations between weather patterns and cont
 
 To do this, our computer vision model had to be able to accurately identify contrails in images, as well as the type of contrails that appear and how many of each type.
 
-## The Datasets
+# The Datasets
 
 Most of our datasets were relatively clean and needed minimal pre-processing. The Sky Images Dataset and Training Labels Spreadsheet are not publicly available datasets.
 
-# Sky Images Dataset
+## Sky Images Dataset
 This dataset is a set of images of the sky taken near Dulles International Airport. The images were taken every hour on the hour starting July 31, 2022. Images were still being added to the dataset at the time of this project.
 The dataset consists of each image and a key, which is the name of the image file. The names are based on the date and time the image was taken, but multiple naming conventions were used that had to be standardized. These images are uploaded to a google drive.
 
-# Training Labels Spreadsheet
+## Training Labels Spreadsheet
 Many images were labeled by experts and put into a spreadsheet. Some of the columns in this spreadsheet are:
 - Key: This key aligns to the file names of the images.
 - Exclude indicator: An indicator to include or exclude the image in the algorithm. Some images were excluded due to poor quality.
@@ -35,7 +37,7 @@ Many images were labeled by experts and put into a spreadsheet. Some of the colu
 - Cirrus contrail count: The number of cirrus contrails identified in the image. 
 - Day cirrus indicator: An indicator of whether any cirrus clouds were present at any point that day. Cirrus clouds also occur in ISSR regions, similar to long-lived and cirrus contrails.
 
-# Ground Weather Dataset
+## Ground Weather Dataset
 This dataset, downloaded from the Visual Crossing weather data site, has information on ground weather. Some of the relevant columns include:
 - Date and time
 - Temperature: Ground temperature in Farenheit. 
@@ -101,7 +103,12 @@ We also evaluated the variable importance based on the coefficients of the logis
 
 We chose to perform two hypothesis tests, t-test and Wilcoxon rank-sum test, on a dataset with and without contrails to investigate the effect of the weather variables on contrail formation. 
 
-The data was pre-processed using the MinMaxScaler function of the SciKit Learn library to normalize the two types of data (with and without contrails). 
+The data was pre-processed using the MinMaxScaler function of the SciKit Learn library to normalize the two types of data (with and without contrails). This was necessary to perform the t-test. See the code snippet for this normalization below. 
+
+X_train, X_test, y_train, y_test = train_test_split(features,label, test_size = 0.25, random_state = 0, stratify=label)    
+sc=MinMaxScaler()
+X_train_scaled=pd.DataFrame(sc.fit_transform(X_train))
+X_test_scaled=pd.DataFrame(sc.transform(X_test))
 
 The results of the t-test used to obtain the p-values of each variable are shown below.
 
