@@ -2,7 +2,7 @@
 layout: post
 title: Computer Vision Project- Airplane Contrail Detection
 subtitle: Masters Capstone Project
-cover-img: /assets/img/index.jpg
+cover-img: /assets/img/contrails.jpg
 tags: [AWS]
 ---
 
