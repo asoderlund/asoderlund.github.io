@@ -6,7 +6,7 @@ cover-img: /assets/img/index.jpg
 tags: [AWS]
 ---
 
-This is my capstone project for my Masters from George Mason University. This project was done in a group setting. While I was involved in every aspect of the project to some degree, I was more involved in some aspects than others. This is a very simplified version of a 16-week long project that culminated in a 50 page report. 
+This is my capstone project for my Masters from George Mason University. This project was done in a group setting. The team members were myself, Jordan Dutterer, Jaeho Shin, and Venkata Sai Ruthvik Pulipaka. While I was involved in every aspect of the project to some degree, I was more involved in some aspects than others. This is a very simplified version of a 16-week long project that culminated in a 50 page report. 
 
 # Context
 Contrails are are created when airplanes fly through an ice supersaturated regsion (ISSR), which have sufficiently cold and humid conditions to turn the exhaust gas discharged from the airplane into ice crystals. These contrails appear as thin white lines that form behind the plane, and many only last a few seconds. However, certain conditions cause these contrails to remain longer. 
@@ -99,6 +99,22 @@ We also evaluated the variable importance based on the coefficients of the logis
 
 ![]({{ "/assets/LR var importance.png" | absolute_url }})
 
+<details><summary markdown="span">**Click Here** to see the code for our Logistic Regression model.</summary>
+```python
+LR = LogisticRegression()
+LR.fit(X_train_scaled, y_train)
+LR_pred = LR.predict(X_test_scaled)
+
+Acc_LR = round(accuracy_score(LR_pred, y_test), 4)
+xgprec_LR, xgrec_LR, xgf_LR, support_LR = score(y_test, LR_pred)
+precision_LR, recall_LR, f1_LR = round(xgprec_LR[0], 4), round(xgrec_LR[0],4), round(xgf_LR[0],4)
+scores_DT = pd.DataFrame({
+    'Metric': ['Accuracy', 'Precision', 'Recall', 'F1'],
+    'Score': [Acc_LR, precision_LR, recall_LR, f1_LR]})
+scores_DT
+```
+</details>
+
 # Statistical Testing
 
 We chose to perform two hypothesis tests, t-test and Wilcoxon rank-sum test, on a dataset with and without contrails to investigate the effect of the weather variables on contrail formation. 
@@ -113,7 +129,7 @@ X_train_scaled=pd.DataFrame(sc.fit_transform(X_train))
 X_test_scaled=pd.DataFrame(sc.transform(X_test))
 ```
 </details>
-<br/>
+
 The results of the t-test used to obtain the p-values of each variable are shown below.
 
 ![]({{ "/assets/t test.png" | absolute_url }})
@@ -142,6 +158,25 @@ p_vals.sort_values('P-value')
 To validate the results obtained from the t-test, we also performed the Wilcoxon rank-sum test, which does not assume any specific distribution of the data and is therefore nonparametric. Since normalization was not required for this test, the data were directly used for the analysis. The p-values obtained from the Wilcoxon rank-sum test are presented below.
 
 ![]({{ "/assets/rank sum.png" | absolute_url }})
+
+<details><summary markdown="span">**Click Here** to see a code snippet for the Wilcoxon rank-sum test.</summary>
+```python
+SLP_stat = stats.ranksums(x = false_df.SLP, y = true_df.SLP) 
+Cloudcover_stat = stats.ranksums(x = false_df.Cloudcover, y = true_df.Cloudcover )
+Dew_stat = stats.ranksums(x = false_df.Dew, y = true_df.Dew) 
+Humid_stat = stats.ranksums(x = false_df.Humid, y = true_df.Humid) 
+Temp_stat = stats.ranksums(x = false_df.Temp, y = true_df.Temp)
+Vis_stat = stats.ranksums(x = false_df.Vis, y = true_df.Vis) 
+Gust_stat = stats.ranksums(x = false_df.Gust, y = true_df.Gust) 
+Windspeed_stat = stats.ranksums(x = false_df.Windspeed, y = true_df.Windspeed)
+
+p_vals = pd.DataFrame({
+    'Variable': ['SLP', 'Cloudcover','dew','humidity','temp','visibility','gust','windspeed'],
+    'P-value': [SLP_stat.pvalue, Cloudcover_stat.pvalue, Dew_stat.pvalue, Humid_stat.pvalue, 
+              Temp_stat.pvalue, Vis_stat.pvalue,Gust_stat.pvalue, Windspeed_stat.pvalue]})
+p_vals.sort_values('P-value')
+```
+</details>
 
 Based on the results in the table, the variables that showed significant differences between the two datasets at a significance level of 0.05 or less were cloud cover, wind gust speed, and visibility.
 In summary, the only variable that showed significant differences between the two datasets at a significance level of 0.05 or less in both t-test and Wilcoxon rank-sum test was cloud cover. 
