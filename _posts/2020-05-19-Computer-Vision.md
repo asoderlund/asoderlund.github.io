@@ -48,7 +48,7 @@ This dataset, downloaded from the Visual Crossing weather data site, has informa
 
 # System Architecture
 
-****Add picture
+![]({{ "/assets/Systems architecture.png" | absolute_url }})
 
 Our model requires high-performance computing to train the image detection model. We decided to use a combination of EC2 and S3 for our storage mediums. All of the data is stored in an S3 bucket as a back-up. The sky images, image labels, and ground weather data are then transfered into RDS, where they undergo pre-processing and then are sent back to RDS.
 
