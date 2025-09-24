@@ -120,6 +120,25 @@ The results of the t-test used to obtain the p-values of each variable are shown
 
 As indicated in the above table, the variables that showed significant differences between the two datasets at a significance level of 0.05 or less were temperature, dew point, change in sea level pressure, and cloud cover. Thus, the null hypothesis was rejected for these variables, and it was concluded that the presence of contrails is affected by the variables.
 
+<details><summary markdown="span">**Click Here** to see a code snippet for the t-test.</summary>
+```python
+SLP_stat = stats.ttest_1samp(a = false_df.SLP, popmean = true_df.SLP.mean() )
+Cloudcover_stat = stats.ttest_1samp(a = false_df.Cloudcover, popmean = true_df.Cloudcover.mean() )
+Dew_stat = stats.ttest_1samp(a = false_df.Dew, popmean = true_df.Dew.mean() )
+Humid_stat = stats.ttest_1samp(a = false_df.Humid, popmean = true_df.Humid.mean() ) # not significant
+Temp_stat = stats.ttest_1samp(a = false_df.Temp, popmean = true_df.Temp.mean() )
+Vis_stat = stats.ttest_1samp(a = false_df.Vis, popmean = true_df.Vis.mean() ) # not significant
+Gust_stat = stats.ttest_1samp(a = false_df.Gust, popmean = true_df.Gust.mean() ) # not significant
+Windspeed_stat = stats.ttest_1samp(a = false_df.Windspeed, popmean = true_df.Windspeed.mean() ) # not significant
+
+  p_vals = pd.DataFrame({
+    'Variable': ['SLP', 'Cloudcover','dew','humidity','temp','visibility','gust','windspeed'],
+    'P-value': [SLP_stat.pvalue, Cloudcover_stat.pvalue, Dew_stat.pvalue, Humid_stat.pvalue, 
+              Temp_stat.pvalue, Vis_stat.pvalue,Gust_stat.pvalue, Windspeed_stat.pvalue]})
+p_vals.sort_values('P-value')
+```
+</details>
+
 To validate the results obtained from the t-test, we also performed the Wilcoxon rank-sum test, which does not assume any specific distribution of the data and is therefore nonparametric. Since normalization was not required for this test, the data were directly used for the analysis. The p-values obtained from the Wilcoxon rank-sum test are presented below.
 
 ![]({{ "/assets/rank sum.png" | absolute_url }})
