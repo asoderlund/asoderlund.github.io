@@ -137,11 +137,13 @@ There are several pages to the dashboard. The first is an overview page (below),
 
 The next page is a detail page where the user can filter the page by weather phenomenon, including cloud coverage, precipitation, humidity, and more. The visuals show how the number of contrails change with the weather phenomenon.
 
-****Add picture
+![]({{ "/assets/dash 2.png" | absolute_url }})
 
 Finally, the last two pages show a key influencers visual for total contrails, as well as each individual type of contrail. The key influencers visual shows which variables have the most correlation with the number of contrails. It gives a measure for how correlated each important variable is to the number of contrails.
 
-*****Add pictures
+![]({{ "/assets/dash 3.png" | absolute_url }})
+
+![]({{ "/assets/dash 4.png" | absolute_url }})
 
 # Findings
 
