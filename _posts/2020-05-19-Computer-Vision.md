@@ -61,11 +61,11 @@ The well-trained model's results are saved to RDS, and organized and displayed i
 
 For the model to accurately detect contrails, we annotated every image that consisted of a contrail in two different ways. The two data labels used are the same for both types of annotations: ‘LongLived’ annotates long-lived contrails, and ‘Cirrus’ annotates cirrus contrails. 
 
-******Add picture
+![]({{ "/assets/Rectangle annotation.png" | absolute_url }})
 
 The first way we annotated the images was by using rectangular annotations. We chose this because most computer vision models are only able to accept rectangular annotations. However, rectangular annotations are not as accurate as polygon annotations.
 
-********Add picture
+![]({{ "/assets/polygon annotation.png" | absolute_url }})
 
 The main advantage of polygon annotations is that the machine learning model can detect contrails with more accuracy as these are custom annotations. Polygon annotations are advantageous when there is no definite or rigid structure of the object that we are trying to predict. This will give us more room to fine tune the model and detect hidden structures present in the clouds.
 
@@ -75,17 +75,17 @@ Roboflow is a computer vision development framework that makes creating a deep-l
 
 The multi-label classification model identifies whether each type of contrail is present in the image but does not identify where the contrails are or draw bounding boxes around the contrails. It also does not identify whether there are multiple contrails in the image. However, the accuracy of this algorithm tends to be much higher because there is less detail required.
 
-Both the object detection and multi-label classification models have benefits, however the object detection model performed well and is able to locate the contrails in the images, so this was the model we decided to use. The final object detection model that performed the best was trained from a checkpoint. It has auto-orienting, resizing, and auto-adjusting contrast as the preprocessing steps. We also found that augmenting the exposure improved accuracy while also making the model more robust. The model has a mean average precision of 81.5%, precision of 92.2%, and recall of 66.5%. As shown in figure 13, the precision is best for long-lived contrails. It makes sense that the model does not perform as well with cirrus contrails, as they are less defined shapes.
+Both the object detection and multi-label classification models have benefits, however the object detection model performed well and is able to locate the contrails in the images, so this was the model we decided to use. The final object detection model that performed the best was trained from a checkpoint. It has auto-orienting, resizing, and auto-adjusting contrast as the preprocessing steps. We also found that augmenting the exposure improved accuracy while also making the model more robust. The model has a mean average precision of 81.5%, precision of 92.2%, and recall of 66.5%. As shown in below, the precision is best for long-lived contrails. It makes sense that the model does not perform as well with cirrus contrails, as they are less defined shapes.
 
-******Add picture
+![]({{ "/assets/roboflow precision.png" | absolute_url }})
 
 The roboflow user interface creates several visuals automatically to help users understand the data. Below are histograms depicting the number of contrails detected in each image. The leftmost histogram is the count of both types of contrails. The middle histogram is only cirrus contrails, and the rightmost figure shows only long-lived contrails. It is clear from these figures that most images only have one contrail present, no matter what type. An image with more than three contrails is especially uncommon.
 
-*****Add pictures
+![]({{ "/assets/contrail counts.png" | absolute_url }})
 
-The other type of visualization Roboflow automatically creates is a heatmap depicting the location of the object annotations. The leftmost heatmap (figure 17) depicts all contrails, the middle heatmap (figure 18) depicts cirrus contrails, and the rightmost heatmap (figure 19) depicts long-lived contrails. Based on these figures, cirrus contrails are more spread out than long-lived contrails. The contrails tend to be concentrated towards the right side of the images, so with more information the exact location where the contrails are most likely to form could be triangulated.
+The other type of visualization Roboflow automatically creates is a heatmap depicting the location of the object annotations. The leftmost heatmap depicts all contrails, the middle heatmap depicts cirrus contrails, and the rightmost heatmap depicts long-lived contrails. Based on these figures, cirrus contrails are more spread out than long-lived contrails. The contrails tend to be concentrated towards the right side of the images, so with more information the exact location where the contrails are most likely to form could be triangulated.
 
-***Add pictures
+![]({{ "/assets/heat maps.png" | absolute_url }})
 
 ## Logistic Regression Model
 
@@ -93,11 +93,11 @@ After developing the object detection model, we used the model outcomes and comb
 
 Shown below are the performance metrics for the model, which performed exceptionally well with precision but had a low recall. 
 
-****Add picture
+![]({{ "/assets/LR Metrics.png" | absolute_url }})
 
 We also evaluated the variable importance based on the coefficients of the logistic regression model. Visibility, wind gust speed, and temperature were the most important variables for this model. 
 
-****Add picture
+![]({{ "/assets/LR var importance.png" | absolute_url }})
 
 # Statistical Testing
 
@@ -116,13 +116,13 @@ X_test_scaled=pd.DataFrame(sc.transform(X_test))
 <br/>
 The results of the t-test used to obtain the p-values of each variable are shown below.
 
-*****Add picture
+![]({{ "/assets/t test.png" | absolute_url }})
 
 As indicated in the above table, the variables that showed significant differences between the two datasets at a significance level of 0.05 or less were temperature, dew point, change in sea level pressure, and cloud cover. Thus, the null hypothesis was rejected for these variables, and it was concluded that the presence of contrails is affected by the variables.
 
 To validate the results obtained from the t-test, we also performed the Wilcoxon rank-sum test, which does not assume any specific distribution of the data and is therefore nonparametric. Since normalization was not required for this test, the data were directly used for the analysis. The p-values obtained from the Wilcoxon rank-sum test are presented below.
 
-****Add picture
+![]({{ "/assets/rank sum.png" | absolute_url }})
 
 Based on the results in the table, the variables that showed significant differences between the two datasets at a significance level of 0.05 or less were cloud cover, wind gust speed, and visibility.
 In summary, the only variable that showed significant differences between the two datasets at a significance level of 0.05 or less in both t-test and Wilcoxon rank-sum test was cloud cover. 
@@ -133,7 +133,7 @@ An interactive, user-friendly dashboard was created in Power BI using the data f
 
 There are several pages to the dashboard. The first is an overview page (below), which can be filtered by types of contrails present, hour of the day, location, and more. It shows statistics and graphics involving the number of contrails over time, for each hour of the day, and by location. 
 
-*****Add picture
+![]({{ "/assets/dash 1.png" | absolute_url }})
 
 The next page is a detail page where the user can filter the page by weather phenomenon, including cloud coverage, precipitation, humidity, and more. The visuals show how the number of contrails change with the weather phenomenon.
 
